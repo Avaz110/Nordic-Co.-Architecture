@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Studio Inquiries | Nordic &amp; Co. Architecture</title>
+  <meta name="description" content="Initiate a dialogue with Nordic & Co. Architecture. Contact our Copenhagen studio or Berlin atelier to discuss your residential or commercial commission.">
+  <meta name="theme-color" content="#FAF9F6">
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons 1.11.3 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sticky Scandinavian Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg sticky-top nordic-navbar" id="nordicNavbar">
+      <div class="container">
+        <!-- Studio Logo -->
+        <a class="navbar-brand d-flex flex-column" href="index.html">
+          <span class="brand-monogram">NORDIC &amp; CO.</span>
+          <span class="brand-subtext">Architecture &amp; Interiors</span>
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler border-0 shadow-none p-0" type="button" data-bs-toggle="collapse" data-bs-target="#nordicNavContent" aria-controls="nordicNavContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-1 text-dark"></i>
+        </button>
+
+        <!-- Navigation Links & Action Button -->
+        <div class="collapse navbar-collapse" id="nordicNavContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services &amp; Calculator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-3">
+            <a href="contact.html" class="btn btn-nordic-dark d-none d-sm-inline-flex">
+              <span>Book Consultation</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Header Banner -->
+  <section class="page-header-banner">
+    <div class="container">
+      <div class="tracking-widest-nordic text-terracotta mb-2">Commissions &amp; Dialogue</div>
+      <h1 class="page-title">Connect with Our Studios</h1>
+      <p class="page-lead">
+        We welcome architectural commissions across Scandinavia, Central Europe, and internationally. Schedule an introductory conversation with our partners in Copenhagen or Berlin.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Contact Section -->
+  <section class="py-5">
+    <div class="container py-3">
+      <div class="row g-5">
+        
+        <!-- Left Column: Consultation Form -->
+        <div class="col-lg-7">
+          <div class="bg-white p-4 p-md-5 border border-subtle-color rounded-1 shadow-sm">
+            
+            <div class="tracking-widest-nordic text-terracotta mb-2">Project Brief</div>
+            <h3 class="font-serif mb-4">Request an Architectural Consultation</h3>
+            
+            <!-- Success Alert (Hidden until submission) -->
+            <div class="alert alert-success d-none mb-4 p-4 border border-success-subtle rounded-1" id="contactSuccessAlert" role="alert"></div>
+
+            <form id="consultationForm" novalidate>
+              
+              <!-- Full Name -->
+              <div class="mb-3">
+                <label for="contactName" class="form-nordic-label">Full Name &bull; Title *</label>
+                <input type="text" class="form-control form-nordic-input" id="contactName" placeholder="e.g. Henrik Lindqvist" required>
+                <div class="invalid-feedback extra-small text-danger">Please enter your full name.</div>
+              </div>
+
+              <!-- Email & Phone Row -->
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label for="contactEmail" class="form-nordic-label">Email Address *</label>
+                  <input type="email" class="form-control form-nordic-input" id="contactEmail" placeholder="name@domain.com" required>
+                  <div class="invalid-feedback extra-small text-danger">Please provide a valid email address.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="contactPhone" class="form-nordic-label">Phone Number *</label>
+                  <input type="tel" class="form-control form-nordic-input" id="contactPhone" placeholder="+45 00 00 00 00" required>
+                  <div class="invalid-feedback extra-small text-danger">Please provide a telephone number.</div>
+                </div>
+              </div>
+
+              <!-- Project Typology & Floor Area -->
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label for="contactType" class="form-nordic-label">Project Typology</label>
+                  <select class="form-select form-nordic-input" id="contactType">
+                    <option value="residential" selected>Private Residential Villa</option>
+                    <option value="interior">Minimalist Interior Renovation</option>
+                    <option value="commercial">Commercial &amp; Workplace</option>
+                    <option value="hospitality">Boutique Hospitality</option>
+                    <option value="other">Masterplanning / Other</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="contactArea" class="form-nordic-label">Approximate Area (m²)</label>
+                  <input type="number" class="form-control form-nordic-input" id="contactArea" placeholder="e.g. 250">
+                </div>
+              </div>
+
+              <!-- Estimated Budget Bracket -->
+              <div class="mb-3">
+                <label for="contactBudget" class="form-nordic-label">Target Investment / Construction Budget</label>
+                <select class="form-select form-nordic-input" id="contactBudget">
+                  <option value="250k-500k">€250,000 – €500,000</option>
+                  <option value="500k-1m" selected>€500,000 – €1,000,000</option>
+                  <option value="1m-2.5m">€1,000,000 – €2,500,000</option>
+                  <option value="2.5m+">€2,500,000+ (Significant Estate)</option>
+                </select>
+              </div>
+
+              <!-- Message / Site Details -->
+              <div class="mb-4">
+                <label for="contactMessage" class="form-nordic-label">Site Details &amp; Architectural Objectives *</label>
+                <textarea class="form-control form-nordic-input" id="contactMessage" rows="5" placeholder="Describe the site location, current property status, desired timeline, or any specific material aspirations..." required></textarea>
+                <div class="invalid-feedback extra-small text-danger">Please outline your project description.</div>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-nordic-dark w-100 py-3" id="submitContactBtn">
+                <span>Submit Architectural Brief</span>
+                <i class="bi bi-send ms-2"></i>
+              </button>
+
+              <div class="extra-small text-muted text-center mt-3">
+                <i class="bi bi-shield-check me-1 text-terracotta"></i> We respect privacy. All commission inquiries are held strictly confidential.
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+
+        <!-- Right Column: Offices in Copenhagen & Berlin -->
+        <div class="col-lg-5">
+          <div class="d-flex flex-column gap-4">
+            
+            <!-- Copenhagen Office Card -->
+            <div class="contact-office-card">
+              <div class="d-flex justify-content-between align-items-baseline mb-2">
+                <span class="tracking-widest-nordic text-terracotta">Head Studio</span>
+                <span class="badge bg-stone-soft text-dark border">Danmark</span>
+              </div>
+              <h4 class="font-serif fw-bold mb-3">Copenhagen Studio</h4>
+              
+              <div class="mb-3 text-secondary small">
+                <div class="d-flex align-items-start gap-2 mb-2">
+                  <i class="bi bi-geo-alt text-terracotta fs-5 mt-n1"></i>
+                  <span>Bredgade 42, 1260 København K, Denmark</span>
+                </div>
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <i class="bi bi-telephone text-terracotta"></i>
+                  <a href="tel:+4533128840" class="text-secondary">+45 33 12 88 40</a>
+                </div>
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <i class="bi bi-envelope text-terracotta"></i>
+                  <a href="mailto:cph@nordic-architecture.com" class="text-secondary">cph@nordic-architecture.com</a>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-clock text-terracotta"></i>
+                  <span>Monday – Friday: 09:00 – 18:00 CET</span>
+                </div>
+              </div>
+
+              <div class="p-2 px-3 bg-stone-soft border border-subtle-color extra-small text-muted">
+                Visitors by appointment. Located 5 minutes from Kongens Nytorv.
+              </div>
+            </div>
+
+            <!-- Berlin Office Card -->
+            <div class="contact-office-card">
+              <div class="d-flex justify-content-between align-items-baseline mb-2">
+                <span class="tracking-widest-nordic text-terracotta">Central Europe Atelier</span>
+                <span class="badge bg-stone-soft text-dark border">Deutschland</span>
+              </div>
+              <h4 class="font-serif fw-bold mb-3">Berlin Atelier</h4>
+              
+              <div class="mb-3 text-secondary small">
+                <div class="d-flex align-items-start gap-2 mb-2">
+                  <i class="bi bi-geo-alt text-terracotta fs-5 mt-n1"></i>
+                  <span>Auguststraße 19, 10117 Berlin-Mitte, Germany</span>
+                </div>
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <i class="bi bi-telephone text-terracotta"></i>
+                  <a href="tel:+493028876410" class="text-secondary">+49 30 28 87 64 10</a>
+                </div>
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <i class="bi bi-envelope text-terracotta"></i>
+                  <a href="mailto:berlin@nordic-architecture.com" class="text-secondary">berlin@nordic-architecture.com</a>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-clock text-terracotta"></i>
+                  <span>Monday – Friday: 09:00 – 18:00 CET</span>
+                </div>
+              </div>
+
+              <div class="p-2 px-3 bg-stone-soft border border-subtle-color extra-small text-muted">
+                Material library and physical prototyping workshop.
+              </div>
+            </div>
+
+            <!-- Architectural Map Coordinates Visual Box -->
+            <div class="bg-white p-4 border border-subtle-color rounded-1">
+              <span class="tracking-widest-nordic text-muted mb-2 d-block">Geographic Reach</span>
+              <div class="d-flex justify-content-between align-items-center border-bottom border-subtle-color pb-2 mb-2">
+                <span class="small fw-semibold">Copenhagen Studio</span>
+                <span class="font-monospace extra-small text-secondary">55.6842° N, 12.5932° E</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center border-bottom border-subtle-color pb-2 mb-2">
+                <span class="small fw-semibold">Berlin Atelier</span>
+                <span class="font-monospace extra-small text-secondary">52.5276° N, 13.3951° E</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="small fw-semibold">Stockholm Field Hub</span>
+                <span class="font-monospace extra-small text-secondary">59.3293° N, 18.0686° E</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Scandinavian Shared Footer -->
+  <footer class="nordic-footer">
+    <div class="container">
+      <div class="row g-5">
+        
+        <!-- Studio Info -->
+        <div class="col-lg-4">
+          <div class="footer-brand mb-2">NORDIC &amp; CO.</div>
+          <div class="tracking-widest-nordic text-light mb-3">Architecture &amp; Interiors</div>
+          <p class="footer-lead mb-4">
+            A collaborative architectural studio founded on the tenets of Scandinavian humanism, sustainable mass timber, and natural illumination.
+          </p>
+          <div class="d-flex align-items-center gap-2 text-light small">
+            <span class="badge bg-white text-dark py-1 px-2 rounded-1 fw-bold">MAA</span>
+            <span class="badge bg-white text-dark py-1 px-2 rounded-1 fw-bold">BDA</span>
+            <span>Danish &amp; German Architectural Associations</span>
+          </div>
+        </div>
+
+        <!-- Studios Locations -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="footer-heading">Copenhagen Studio</div>
+          <p class="text-light small mb-1">Bredgade 42, 1260 København K</p>
+          <p class="text-light small mb-1">Denmark</p>
+          <p class="text-light small mb-3"><a href="tel:+4533128840" class="text-light">+45 33 12 88 40</a></p>
+
+          <div class="footer-heading mt-4">Berlin Atelier</div>
+          <p class="text-light small mb-1">Auguststraße 19, 10117 Berlin-Mitte</p>
+          <p class="text-light small mb-1">Germany</p>
+          <p class="text-light small mb-0"><a href="tel:+493028876410" class="text-light">+49 30 28 87 64 10</a></p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="col-sm-6 col-lg-2">
+          <div class="footer-heading">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Portfolio</a></li>
+            <li><a href="services.html">Services &amp; Calculator</a></li>
+            <li><a href="contact.html">Contact &amp; Offices</a></li>
+            <li><a href="projects.html">Archive</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Accreditations -->
+        <div class="col-lg-3">
+          <div class="footer-heading">Seasonal Journal</div>
+          <p class="small text-light mb-3">
+            Receive our quarterly publication detailing new architectural completions, material research, and spatial theory.
+          </p>
+          <form class="d-flex gap-2" onsubmit="event.preventDefault(); alert('Thank you for subscribing to the Nordic & Co. Architectural Journal.'); this.reset();">
+            <input type="email" class="form-control form-control-sm rounded-0 border-0" placeholder="Your email address" required style="background: rgba(255,255,255,0.1); color: #fff;">
+            <button class="btn btn-sm btn-nordic-terracotta rounded-0" type="submit">Join</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 Nordic &amp; Co. Architecture ApS. All rights reserved.
+        </div>
+        <div class="d-flex align-items-center gap-4 text-light small">
+          <a href="#" class="text-light">Privacy Policy</a>
+          <a href="#" class="text-light">Terms of Commission</a>
+          <a href="#" class="text-light">Impressum</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button type="button" class="scroll-top-nordic" id="scrollTopNordic" aria-label="Scroll to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5.3.3 Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Studio Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

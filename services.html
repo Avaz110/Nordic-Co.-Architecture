@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services &amp; Project Cost Calculator | Nordic &amp; Co. Architecture</title>
+  <meta name="description" content="Explore our architectural process from concept to turnkey delivery, and calculate an instant preliminary budget and fee estimate using our interactive calculator.">
+  <meta name="theme-color" content="#FAF9F6">
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons 1.11.3 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sticky Scandinavian Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg sticky-top nordic-navbar" id="nordicNavbar">
+      <div class="container">
+        <!-- Studio Logo -->
+        <a class="navbar-brand d-flex flex-column" href="index.html">
+          <span class="brand-monogram">NORDIC &amp; CO.</span>
+          <span class="brand-subtext">Architecture &amp; Interiors</span>
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler border-0 shadow-none p-0" type="button" data-bs-toggle="collapse" data-bs-target="#nordicNavContent" aria-controls="nordicNavContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-1 text-dark"></i>
+        </button>
+
+        <!-- Navigation Links & Action Button -->
+        <div class="collapse navbar-collapse" id="nordicNavContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="services.html">Services &amp; Calculator</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-3">
+            <a href="contact.html" class="btn btn-nordic-dark d-none d-sm-inline-flex">
+              <span>Book Consultation</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Header Banner -->
+  <section class="page-header-banner">
+    <div class="container">
+      <div class="tracking-widest-nordic text-terracotta mb-2">Practice Method &amp; Budget Modeling</div>
+      <h1 class="page-title">Architectural Services &amp; Fee Estimation</h1>
+      <p class="page-lead">
+        From initial topographical and sunlight analysis to turnkey construction oversight, our studio provides transparent, holistic design leadership across all project phases.
+      </p>
+    </div>
+  </section>
+
+  <!-- 4 Work Phases Section -->
+  <section class="py-5">
+    <div class="container py-3">
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-lg-8">
+          <div class="tracking-widest-nordic text-terracotta mb-2">The Four Stages of Creation</div>
+          <h2 class="display-5 font-serif">How We Guide Your Commission</h2>
+          <p class="lead text-secondary">
+            Our collaborative methodology ensures rigorous cost governance, material craftsmanship, and structural poetry at every milestone.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Phase 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="phase-card">
+            <div class="phase-number">01</div>
+            <h4 class="font-serif fw-bold mb-2">Discovery &amp; Feasibility</h4>
+            <p class="small text-secondary mb-3">
+              Comprehensive analysis of terrain topography, micro-climate sun paths, municipal zoning constraints, and client spatial rituals.
+            </p>
+            <ul class="list-unstyled extra-small text-muted mb-0">
+              <li class="mb-1"><i class="bi bi-check2 text-terracotta me-1"></i> Site &amp; Sun-Angle Studies</li>
+              <li class="mb-1"><i class="bi bi-check2 text-terracotta me-1"></i> Regulatory Zoning Checks</li>
+              <li><i class="bi bi-check2 text-terracotta me-1"></i> Initial Project Budget Envelope</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="phase-card">
+            <div class="phase-number">02</div>
+            <h4 class="font-serif fw-bold mb-2">Concept &amp; Spatial Drafting</h4>
+            <p class="small text-secondary mb-3">
+              Volumetric sketch models, spatial floor plans, 3D daylight simulations, and tactile physical material moodboards.
+            </p>
+            <ul class="list-unstyled extra-small text-muted mb-0">
+              <li class="mb-1"><i class="bi bi-check2 text-terracotta me-1"></i> Architectural Massing Options</li>
+              <li class="mb-1"><i class="bi bi-check2 text-terracotta me-1"></i> Photorealistic Visualizations</li>
+              <li><i class="bi bi-check2 text-terracotta me-1"></i> Stone &amp; Timber Sample Box</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Phase 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="phase-card">
+            <div class="phase-number">03</div>
+            <h4 class="font-serif fw-bold mb-2">Technical Engineering &amp; Permits</h4>
+            <p class="small text-secondary mb-3">
+              Production of millimeter-precise construction blueprints, structural timber calculations, MEP systems, and building permit filing.
+            </p>
+            <ul class="list-unstyled extra-small text-muted mb-0">
+              <li class="mb-1"><i class="bi bi-check2 text-terracotta me-1"></i> Statutory Authority Approvals</li>
+              <li class="mb-1"><i class="bi bi-check2 text-terracotta me-1"></i> Detailed Joinery &amp; Millwork Plans</li>
+              <li><i class="bi bi-check2 text-terracotta me-1"></i> Contractor Tender Documentation</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Phase 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="phase-card">
+            <div class="phase-number">04</div>
+            <h4 class="font-serif fw-bold mb-2">Construction &amp; Delivery</h4>
+            <p class="small text-secondary mb-3">
+              On-site weekly quality supervision, contractor coordination, bespoke lighting procurement, and final turnkey handover.
+            </p>
+            <ul class="list-unstyled extra-small text-muted mb-0">
+              <li class="mb-1"><i class="bi bi-check2 text-terracotta me-1"></i> Weekly Site Inspections</li>
+              <li class="mb-1"><i class="bi bi-check2 text-terracotta me-1"></i> Budget Variance Auditing</li>
+              <li><i class="bi bi-check2 text-terracotta me-1"></i> Turnkey Key Handover</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Project Cost Calculator Section -->
+  <section class="py-5 bg-stone-soft border-top border-bottom border-subtle-color" id="calculator">
+    <div class="container py-4">
+      
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-lg-8">
+          <div class="tracking-widest-nordic text-terracotta mb-2">Instant Fee &amp; Budget Forecast</div>
+          <h2 class="display-5 font-serif mb-3">Interactive Project Cost Estimator</h2>
+          <p class="lead text-secondary">
+            Select your architectural typology, adjust total usable floor area in square meters, and select service scope for an immediate budgetary forecast.
+          </p>
+        </div>
+      </div>
+
+      <!-- Calculator Box -->
+      <div class="calculator-card p-4 p-md-5">
+        <div class="row g-4 g-lg-5 align-items-stretch">
+          
+          <!-- Controls Column (Left) -->
+          <div class="col-lg-7">
+            
+            <!-- 1. Property Type Selector -->
+            <div class="mb-4">
+              <span class="calc-section-title">1. Select Property Typology</span>
+              <div class="calc-type-selector row g-2">
+                
+                <div class="col-sm-6">
+                  <div class="form-check">
+                    <input class="form-check-input d-none" type="radio" name="propertyType" id="typeVilla" value="residential-villa" checked>
+                    <label class="calc-type-label" for="typeVilla">
+                      <span><i class="bi bi-house-door me-2 text-terracotta"></i> Private Coastal Villa</span>
+                      <span class="badge bg-white text-dark border">Base</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="form-check">
+                    <input class="form-check-input d-none" type="radio" name="propertyType" id="typeApartment" value="urban-apartment">
+                    <label class="calc-type-label" for="typeApartment">
+                      <span><i class="bi bi-layout-sidebar me-2 text-terracotta"></i> Minimalist Apartment</span>
+                      <span class="badge bg-white text-dark border">Interior</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="form-check">
+                    <input class="form-check-input d-none" type="radio" name="propertyType" id="typeOffice" value="commercial-office">
+                    <label class="calc-type-label" for="typeOffice">
+                      <span><i class="bi bi-building me-2 text-terracotta"></i> Workplace / Studio</span>
+                      <span class="badge bg-white text-dark border">Commercial</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="form-check">
+                    <input class="form-check-input d-none" type="radio" name="propertyType" id="typeHospitality" value="hospitality">
+                    <label class="calc-type-label" for="typeHospitality">
+                      <span><i class="bi bi-cup-hot me-2 text-terracotta"></i> Boutique Hospitality</span>
+                      <span class="badge bg-white text-dark border">Hospitality</span>
+                    </label>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- 2. Area in Square Meters (Slider & Direct Input) -->
+            <div class="mb-4">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="calc-section-title mb-0">2. Usable Floor Area (Square Meters)</span>
+                <div class="d-flex align-items-center gap-1">
+                  <input type="number" class="form-control form-control-sm text-end fw-bold" id="calcAreaInput" value="220" min="40" max="1500" style="width: 90px; border-color: var(--border-medium);">
+                  <span class="small fw-semibold text-secondary">m²</span>
+                </div>
+              </div>
+              <input type="range" class="form-range form-range-nordic w-100" id="calcAreaRange" min="40" max="1000" step="10" value="220">
+              <div class="d-flex justify-content-between extra-small text-muted mt-1">
+                <span>40 m² (Apartment)</span>
+                <span>250 m² (Villa)</span>
+                <span>500 m² (Residence)</span>
+                <span>1,000+ m² (Estate / Office)</span>
+              </div>
+            </div>
+
+            <!-- 3. Service Package Tier -->
+            <div class="mb-4">
+              <span class="calc-section-title">3. Architecture &amp; Design Package Tier</span>
+              <div class="row g-2">
+                <div class="col-12">
+                  <div class="form-check p-0">
+                    <input class="form-check-input d-none" type="radio" name="serviceTier" id="tierConcept" value="concept">
+                    <label class="calc-type-label" for="tierConcept">
+                      <div>
+                        <strong>Concept &amp; Schematics</strong>
+                        <div class="extra-small text-muted">Spatial layout, 3D renderings, and material moodboards (Phase 01–02).</div>
+                      </div>
+                      <span class="badge bg-white text-dark border">1.0x</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-check p-0">
+                    <input class="form-check-input d-none" type="radio" name="serviceTier" id="tierComprehensive" value="comprehensive" checked>
+                    <label class="calc-type-label" for="tierComprehensive">
+                      <div>
+                        <strong>Comprehensive Architecture (Recommended)</strong>
+                        <div class="extra-small text-muted">Full working technical blueprints, building permits, contractor tenders (Phase 01–03).</div>
+                      </div>
+                      <span class="badge bg-terracotta text-white">Most Chosen</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-check p-0">
+                    <input class="form-check-input d-none" type="radio" name="serviceTier" id="tierTurnkey" value="turnkey">
+                    <label class="calc-type-label" for="tierTurnkey">
+                      <div>
+                        <strong>Turnkey Architecture &amp; Construction Supervision</strong>
+                        <div class="extra-small text-muted">Complete end-to-end design, joinery design, and weekly on-site quality control (Phase 01–04).</div>
+                      </div>
+                      <span class="badge bg-white text-dark border">Full Leadership</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Optional Architectural Add-ons -->
+            <div>
+              <span class="calc-section-title">4. Specialized Add-ons (Optional)</span>
+              <div class="d-flex flex-column gap-2">
+                <div class="form-check">
+                  <input class="form-check-input calc-addon-check" type="checkbox" value="4500" id="addonMillwork" checked>
+                  <label class="form-check-label small text-secondary" for="addonMillwork">
+                    Bespoke Smoked Oak Millwork &amp; Integrated Cabinetry Design (+€4,500)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input calc-addon-check" type="checkbox" value="7500" id="addonLandscape">
+                  <label class="form-check-label small text-secondary" for="addonLandscape">
+                    Nordic Courtyard &amp; Architectural Landscape Integration (+€7,500)
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input calc-addon-check" type="checkbox" value="5000" id="addonPassive">
+                  <label class="form-check-label small text-secondary" for="addonPassive">
+                    Certified Passive House &amp; Net-Zero Low Carbon Modeling (+€5,000)
+                  </label>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Dynamic Results Column (Right) -->
+          <div class="col-lg-5">
+            <div class="calc-result-box d-flex flex-column justify-content-between">
+              <div>
+                <div class="tracking-widest-nordic text-terracotta mb-2">Estimated Architectural Fee</div>
+                <div class="calc-fee-number mb-2" id="resultFeeTotal">€58,700</div>
+                <p class="extra-small text-light mb-4">
+                  Estimated fee includes full architectural drawing set, 3D renderings, and material specifications.
+                </p>
+
+                <hr style="border-color: rgba(255,255,255,0.15);">
+
+                <div class="tracking-widest-nordic text-light mb-2">Fee Milestone Breakdown</div>
+                
+                <div class="calc-breakdown-row">
+                  <span class="text-light">Concept &amp; Schematics (35%)</span>
+                  <strong class="text-white" id="resultSchematic">€20,545</strong>
+                </div>
+
+                <div class="calc-breakdown-row">
+                  <span class="text-light">Technical Documentation &amp; Permits (45%)</span>
+                  <strong class="text-white" id="resultTechnical">€26,415</strong>
+                </div>
+
+                <div class="calc-breakdown-row">
+                  <span class="text-light">Site Supervision &amp; Delivery (20%)</span>
+                  <strong class="text-white" id="resultSupervision">€11,740</strong>
+                </div>
+
+                <div class="calc-breakdown-row mt-3">
+                  <span class="text-light">Est. Construction / Build Budget</span>
+                  <strong class="text-terracotta" id="resultBuildEstimate">€616,000</strong>
+                </div>
+
+                <div class="calc-breakdown-row">
+                  <span class="text-light">Estimated Delivery Horizon</span>
+                  <strong class="text-white" id="resultDuration">9 – 12 Months</strong>
+                </div>
+              </div>
+
+              <div class="mt-4 pt-3 border-top" style="border-color: rgba(255,255,255,0.15);">
+                <a href="contact.html" class="btn btn-nordic-terracotta w-100 py-3" id="calcBookBtn">
+                  <span>Inquire with this Estimate</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+                <p class="extra-small text-center text-light mt-2 mb-0">
+                  Calculations are preliminary benchmarks based on current Nordic &amp; German market costs.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Scandinavian Shared Footer -->
+  <footer class="nordic-footer">
+    <div class="container">
+      <div class="row g-5">
+        
+        <!-- Studio Info -->
+        <div class="col-lg-4">
+          <div class="footer-brand mb-2">NORDIC &amp; CO.</div>
+          <div class="tracking-widest-nordic text-light mb-3">Architecture &amp; Interiors</div>
+          <p class="footer-lead mb-4">
+            A collaborative architectural studio founded on the tenets of Scandinavian humanism, sustainable mass timber, and natural illumination.
+          </p>
+          <div class="d-flex align-items-center gap-2 text-light small">
+            <span class="badge bg-white text-dark py-1 px-2 rounded-1 fw-bold">MAA</span>
+            <span class="badge bg-white text-dark py-1 px-2 rounded-1 fw-bold">BDA</span>
+            <span>Danish &amp; German Architectural Associations</span>
+          </div>
+        </div>
+
+        <!-- Studios Locations -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="footer-heading">Copenhagen Studio</div>
+          <p class="text-light small mb-1">Bredgade 42, 1260 København K</p>
+          <p class="text-light small mb-1">Denmark</p>
+          <p class="text-light small mb-3"><a href="tel:+4533128840" class="text-light">+45 33 12 88 40</a></p>
+
+          <div class="footer-heading mt-4">Berlin Atelier</div>
+          <p class="text-light small mb-1">Auguststraße 19, 10117 Berlin-Mitte</p>
+          <p class="text-light small mb-1">Germany</p>
+          <p class="text-light small mb-0"><a href="tel:+493028876410" class="text-light">+49 30 28 87 64 10</a></p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="col-sm-6 col-lg-2">
+          <div class="footer-heading">Navigation</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Portfolio</a></li>
+            <li><a href="services.html">Services &amp; Calculator</a></li>
+            <li><a href="contact.html">Contact &amp; Offices</a></li>
+            <li><a href="projects.html">Archive</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter & Accreditations -->
+        <div class="col-lg-3">
+          <div class="footer-heading">Seasonal Journal</div>
+          <p class="small text-light mb-3">
+            Receive our quarterly publication detailing new architectural completions, material research, and spatial theory.
+          </p>
+          <form class="d-flex gap-2" onsubmit="event.preventDefault(); alert('Thank you for subscribing to the Nordic & Co. Architectural Journal.'); this.reset();">
+            <input type="email" class="form-control form-control-sm rounded-0 border-0" placeholder="Your email address" required style="background: rgba(255,255,255,0.1); color: #fff;">
+            <button class="btn btn-sm btn-nordic-terracotta rounded-0" type="submit">Join</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <div>
+          &copy; 2026 Nordic &amp; Co. Architecture ApS. All rights reserved.
+        </div>
+        <div class="d-flex align-items-center gap-4 text-light small">
+          <a href="#" class="text-light">Privacy Policy</a>
+          <a href="#" class="text-light">Terms of Commission</a>
+          <a href="#" class="text-light">Impressum</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button type="button" class="scroll-top-nordic" id="scrollTopNordic" aria-label="Scroll to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5.3.3 Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Studio Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
